@@ -1,13 +1,11 @@
-const [counter, setCounter] = useState(0); // Array destructing
-return <button>{Math.random()}</button>
+>>> Array destructing
+>>> Arrow function
+>>> 
 
-   function logRandom() {
-     console.log(Math.random());
-   }
-
+ 
 
     function Button() {
-      const [counter, setCounter] = useState(42);
+      const [counter, setCounter] = useState(42); // Array destructing
       return <button onClick={logRandom}>{counter}</button>
     }
  
@@ -15,6 +13,8 @@ return <button>{Math.random()}</button>
       const [counter, setCounter] = useState(0);
       return <button onClick={() => alert(Math.random())}>{counter}</button>
     }
+    
+    
  
     
  
