@@ -9,11 +9,14 @@
       return <button onClick={logRandom}>{counter}</button>
     }
  
-    function Button_arrowfunction() {
-      const [counter, setCounter] = useState(0);
-      return <button onClick={() => alert(Math.random())}>{counter}</button>
+   
+    function Button() {
+      const [counter, setCounter] = useState(0); // Array destructing
+      return <button onClick={() => setCounter(counter+1)}>{counter}</button>; // Arrow Function
     }
-    
+ 
+    ReactDOM.render(<Button />, mountNode);
+ 
     
  
     
